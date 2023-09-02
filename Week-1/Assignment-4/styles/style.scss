@@ -19,7 +19,7 @@
   width: 45%;
   top: 8%;
   height: 60vh;
-  // background-color: aqua;
+  /* // background-color: aqua; */
   z-index: 3;
   border: 1px solid lightgray;
 
@@ -94,13 +94,13 @@ header {
   flex-direction: row;
   position: relative;
   top: 0vh;
-  margin-bottom: 30vh;
-  // background-color: aqua;
+  margin-bottom: 0vh;
+  /* background-color: aqua; */
 
   .heading-left {
     display: flex;
     flex-direction: column;
-    // background-color: yellow;
+    /* // background-color: yellow; */
     margin-left: 40px;
     margin-top: 30px;
     flex: 2;
@@ -131,8 +131,8 @@ header {
     display: flex;
     flex-direction: column;
     flex: 1;
-    // background-color: chartreuse;
-    // margin: 20px;
+    /* // background-color: chartreuse; */
+    /* // margin: 20px; */
     justify-content: center;
     align-items: center;
     margin-right: 50px;
@@ -150,11 +150,11 @@ header {
       right: 1%;
       margin-top: 0px;
       flex-direction: row;
-      // background-color: burlywood;
+      /* // background-color: burlywood; */
 
       .apps {
         margin: 8px;
-        // background-color: cornflowerblue;
+        /* background-color: cornflowerblue; */
         border: 2px solid rgba(0, 0, 0, 0.7);
         padding: 4px 18px;
         font-size: 12px;
@@ -173,7 +173,7 @@ header {
 .intersection {
   height: 30vh;
   background-color: rgba(212, 209, 209, 0.15);
-  margin-top: 40vh;
+  margin-top: 20vh;
 }
 
 .navbar {
