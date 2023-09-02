@@ -178,6 +178,7 @@ header .heading-right .applications .apps:hover {
   font-size: 14px;
   padding-top: 5px;
   margin-right: 2px;
+  /* // background-color: aqua; */
 }
 .navbar #googleP {
   width: 20%;
@@ -193,15 +194,29 @@ header .heading-right .applications .apps:hover {
   margin-right: 10px;
   width: 100%;
   padding-top: 8px;
+  /* // .solutions{
+  //   background-color: bisque;
+  // } */
+  /* // .events{
+  //   background-color: yellowgreen;
+  // } */
+  /* // .learn{
+  //   background-color: violet; 
+  // } */
+  /* // .blog{
+  //   background-color: tomato;
+  // } */
 }
 .navbar .toggles p {
   color: rgb(103, 101, 101);
   font-size: 12px;
 }
 .navbar .toggles .products {
+  /* // background-color: aquamarine; */
   cursor: pointer;
 }
 .navbar .toggles .options {
+  /* // background-color: thistle; */
   cursor: pointer;
 }
 .navbar .toggles .none {
@@ -230,9 +245,12 @@ header .heading-right .applications .apps:hover {
   border-radius: 5%;
   margin-right: 26px;
   margin-bottom: 6px;
-  padding-bottom: 10px;
+  padding-top: 8px;
   flex: 1.5;
   cursor: pointer;
+  /* // p {
+  //   font-weight: 600;
+  // } */
 }
 .navbar .toggles .language:hover {
   background-color: rgba(223, 221, 221, 0.235);
@@ -242,7 +260,7 @@ header .heading-right .applications .apps:hover {
   border: 1px solid lightgray;
   border-radius: 50%;
   padding: 3px;
-  padding-top: 2px;
+  padding-top: 5px;
   flex: 0.3;
   cursor: pointer;
   margin-bottom: 6px;
@@ -262,7 +280,7 @@ header .heading-right .applications .apps:hover {
   height: 5vh;
   border-radius: 50%;
   margin-left: 15px;
-  padding-top: 7px;
+  padding-top: 10px;
   cursor: pointer;
   margin-bottom: 6px;
 }
@@ -274,9 +292,11 @@ footer {
   display: flex;
   flex-direction: column;
   height: 150vh;
+  /* // background-color: rgb(151, 59, 59); */
   justify-content: end;
 }
 footer .follow {
+  /* // background-color: aqua; */
   align-self: center;
   font-size: 42px;
   font-weight: 500;
@@ -333,6 +353,7 @@ footer .socialMedia .btn {
   font-size: 12px;
 }
 footer .linkToOutside {
+  /* // background-color: brown; */
   display: flex;
   position: relative;
   flex-direction: row;
@@ -350,6 +371,7 @@ footer .linkToOutside .outsideSet {
   padding: 10px;
   margin: 4px;
   margin-top: 40px;
+  /* // margin-bottom: 0px; */
 }
 footer .linkToOutside div.head1 {
   display: flex;
@@ -386,6 +408,7 @@ footer .linkToOutside a:hover {
   color: rgb(18, 114, 146);
 }
 footer .footerBar {
+  /* // background-color: violet; */
   height: 10vh;
   margin-top: 4px;
   margin-bottom: 16px;
@@ -397,6 +420,7 @@ footer .footerBar .footerBarBox {
 }
 footer .footerBar a,
 footer .footerBar p {
+  /* // background-color: aqua; */
   margin: 20px 20px;
   font-size: 14px;
   text-decoration: none;
@@ -415,6 +439,7 @@ footer .footerBar .footerBarBlank {
 }
 footer .terms {
   height: 10vh;
+  /* // background-color: tomato; */
   display: flex;
   flex-direction: row;
   position: relative;
@@ -426,6 +451,7 @@ footer .terms .slash {
   margin-bottom: 0.1%;
 }
 footer .terms .term {
+  /* // background-color: white; */
   margin: 8px;
 }
 footer .terms .terms1 {
