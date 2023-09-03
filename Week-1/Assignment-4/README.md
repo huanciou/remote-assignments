@@ -1,6 +1,6 @@
-[HW4 Page](https://huanciou.github.io/remote-assignments/Week-1/Assignment-4/index.html)
+# version 0.0.1
 
-[version 0.0.1]
+[HW4 Page](https://huanciou.github.io/remote-assignments/Week-1/Assignment-4/index.html)
 
 1. 大致 layout
 2. 新增 `Products` 的 `Menu`
