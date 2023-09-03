@@ -89,11 +89,13 @@ language.forEach( e => {
         if(play){
             startADs();
             adPlay.style.width = "8px";
-            adPlay.style.height = "8px";
-            adPlay.style.backgroundColor = "rgba(128, 128, 128, 0.6)";
-            adPlay.style.border = "1px solid rgba(128, 128, 128, 0.1)";
-            adPlay.style.marginTop = "16px";
-            adPlay.style.marginLeft = "1px";
+            adPlay.style.height = "10px";
+            adPlay.style.borderTop = "none";
+            adPlay.style.borderLeft = "3px solid rgba(128, 128, 128, 0.6)";
+            adPlay.style.borderBottom = "none";
+            adPlay.style.borderRight = "3px solid rgba(128, 128, 128, 0.6)";
+            adPlay.style.backgroundColor = "white";
+            adPlay.style.marginTop = "15px";
             adPlay.style.cursor = "pointer";
         }
         else{
