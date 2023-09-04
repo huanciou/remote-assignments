@@ -2,6 +2,7 @@ const products = document.querySelector(".js-products");
 const options = document.querySelector(".js-options");
 const language = document.querySelectorAll(".js-language");
 const productsScroll = document.querySelector(".js-products-scroll");
+const optionsScroll = document.querySelector(".js-options-scroll")
 const ad = document.querySelectorAll(".js-ad");
 const adPlay = document.querySelector(".js-adPlay");
 const adSwitch1 = document.querySelector(".adSwitch1");
@@ -20,24 +21,23 @@ products.addEventListener("mouseenter", () => {
 
 });
 
-// products.addEventListener("mouseleave", () => {
-//     productsScroll.style.display = "none";
-//  });
-
 productsScroll.addEventListener("mouseleave", () =>{
-    productsScroll.style.display = "none";
     products.querySelector("p").innerText = "Products ▾";
+    productsScroll.style.display = "none";
+    
 })
 
 /* options events*/
 
 options.addEventListener("mouseenter", () => {
     options.querySelector("p").innerText = "更多選項 ▸";
+    optionsScroll.style.display = "flex";
 
 });
 
-options.addEventListener("mouseleave", () => {
+optionsScroll.addEventListener("mouseleave", () => {
     options.querySelector("p").innerText = "更多選項 ▾";
+    optionsScroll.style.display = "none";
 });
 
 /* language events*/
