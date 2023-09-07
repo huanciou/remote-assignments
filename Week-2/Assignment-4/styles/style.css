@@ -2,5 +2,93 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 16px;
   max-width: 2000px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  justify-content: space-between;
+  background-color: rgb(238, 238, 238);
+  align-items: center;
+}
+header .title {
+  margin-left: 20px;
+  /* background-color: yellow; */
+}
+header .items {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+}
+header .items .item {
+  margin: 10px;
+}
+header .items .item:hover {
+  cursor: pointer;
+  color: rgb(38, 102, 125);
+}
+
+div.heading {
+  display: flex;
+  background-color: rgb(204, 221, 238);
+  width: 100%;
+  height: 20vh;
+  cursor: pointer;
+}
+div.heading .welcome {
+  margin: auto;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+section {
+  display: flex;
+  /* background-color: yellow; */
+  width: 100%;
+  height: 70vh;
+  flex-direction: column;
+}
+section div.sectionTitle {
+  margin: 3% auto;
+  font-size: 22px;
+  font-weight: 600;
+}
+section .contentBox {
+  display: flex;
+  position: relative;
+  margin: 0% auto 50px auto;
+  width: 80%;
+  height: 34vh;
+  flex-wrap: wrap;
+}
+section .contentBox .content {
+  margin: 0.5% 1%;
+  /* width: 30%; */
+  height: 15vh;
+  background-color: rgb(136, 153, 170);
+  text-align: center;
+  flex: 1 40%;
+}
+section button {
+  background-color: rgb(221, 237, 255);
+  border: 1px solid transparent;
+  width: 130px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+section button:hover {
+  background-color: rgba(114, 175, 244, 0.6);
+}
+
+#js-hiddenSection {
+  display: none;
+  width: 100%;
+  height: 40vh;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
