@@ -17,3 +17,7 @@
     - `0904 新增廣告牆`
 
 - Week-2
+
+  - [HW4 Page](https://huanciou.github.io/remote-assignments/Week-2/Assignment-4/index.html)
+
+  - [HW6 Page](#)
