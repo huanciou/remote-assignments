@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.504fb592.css",
-    "main.js": "/static/js/main.5595dd55.js",
-    "index.html": "/index.html",
-    "main.504fb592.css.map": "/static/css/main.504fb592.css.map",
-    "main.5595dd55.js.map": "/static/js/main.5595dd55.js.map"
+    "main.css": "/remote-assignments/Week-2/Assignment-6/my-react-app/static/css/main.504fb592.css",
+    "main.js": "/remote-assignments/Week-2/Assignment-6/my-react-app/static/js/main.5595dd55.js",
+    "index.html": "/remote-assignments/Week-2/Assignment-6/my-react-app/index.html",
+    "main.504fb592.css.map": "/remote-assignments/Week-2/Assignment-6/my-react-app/static/css/main.504fb592.css.map",
+    "main.5595dd55.js.map": "/remote-assignments/Week-2/Assignment-6/my-react-app/static/js/main.5595dd55.js.map"
   },
   "entrypoints": [
     "static/css/main.504fb592.css",
