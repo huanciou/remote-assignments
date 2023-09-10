@@ -1,0 +1,91 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.Nav {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+  width: 100vw;
+  height: 8vh;
+  font-size: 20px;
+  font-weight: bolder;
+  z-index: 999;
+}
+.Nav .navLeft {
+  display: flex;
+  margin: 0px 20px;
+}
+.Nav .navRight {
+  display: flex;
+  margin-left: auto;
+  margin-right: 30px;
+  padding: 10px;
+  width: 25vw;
+  justify-content: space-between;
+}
+.Nav .navRight p {
+  display: flex;
+  cursor: pointer;
+}
+
+.Welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  background-color: rgb(204, 221, 238);
+  height: 26vh;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 8vh;
+  height: 60vh;
+  justify-content: space-between;
+  margin-bottom: 10vh;
+}
+section p {
+  font-size: 26px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 200;
+}
+section .contentBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 60vw;
+}
+section .contentBox .content {
+  text-align: center;
+  width: 49%; /* 或者使用 flex: 0 0 48%; */
+  height: 16vh;
+  margin-bottom: 10px; /* 可以調整間距 */
+  background-color: rgb(136, 153, 170);
+}
+section #callAction {
+  background-color: rgb(221, 237, 255);
+  border: 1px solid transparent;
+  font-size: 16px;
+  width: 130px;
+  height: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+section #callAction:hover {
+  background-color: rgba(114, 175, 244, 0.6);
+}/*# sourceMappingURL=style.css.map */

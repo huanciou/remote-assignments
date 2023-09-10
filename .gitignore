@@ -1,3 +1,4 @@
 tmp/
 .eslintrc.js
 node_modules/
+test.js

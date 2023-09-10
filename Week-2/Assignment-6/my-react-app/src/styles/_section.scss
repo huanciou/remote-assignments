@@ -1,0 +1,50 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 8vh;
+  // background-color: antiquewhite;
+  height: 60vh;
+  justify-content: space-between;
+  margin-bottom: 10vh;
+
+  p {
+    // background-color: aqua;
+    font-size: 26px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: 200;
+  }
+
+  .contentBox {
+    display: flex;
+    // background-color: aquamarine;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 60vw;
+
+    .content {
+      text-align: center;
+      width: 49%; /* 或者使用 flex: 0 0 48%; */
+      height: 16vh;
+      margin-bottom: 10px; /* 可以調整間距 */
+      background-color: rgb(136, 153, 170);
+    }
+  }
+
+  #callAction {
+    background-color: rgb(221, 237, 255);
+    border: 1px solid transparent;
+    font-size: 16px;
+    width: 130px;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(114, 175, 244, 0.6);
+    }
+  }
+}

@@ -4,8 +4,6 @@
 
   - [HW2 Page](https://huanciou.github.io/remote-assignments/Week-1/Assignment-2/index.html)
 
-    - `max-width <= 1200px`
-
   - [HW4 Page](https://huanciou.github.io/remote-assignments/Week-1/Assignment-4/index.html)
 
     - `建議使用 width > 1200px 收看`
