@@ -10,12 +10,11 @@
 
     - `因為還沒有用好 @media screen 編輯 拉太小會變得東倒西歪的`
 
-    - `調大小調的好生氣`
-
-    - `0904 新增廣告牆`
-
 - Week-2
 
   - [HW4 Page](https://huanciou.github.io/remote-assignments/Week-2/Assignment-4/index.html)
 
-  - [HW6 Page](#)
+  - [HW6 Page](https://huanciou.github.io/my-react-app/)
+
+    - `額外創了一個 repo 因為他一直要我用 gh-page 的 branch 來 deploy github pages`
+      `但是我的其他 Pages 是放在 main ... 所以我想到最好的辦法就是在建立一個新的 repo `
