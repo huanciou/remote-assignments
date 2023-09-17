@@ -1,0 +1,44 @@
+nav {
+  width: 100vw;
+  display: flex;
+  background-color: rgb(190, 235, 220, 0.7);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+
+  .home {
+    margin-left: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 900;
+
+    a {
+      &:visited {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    // background-color: yellow;
+    width: 40vw;
+    margin-right: 2vw;
+
+    a {
+      padding: 20px;
+      margin: 10 50px;
+      margin-left: auto;
+      text-decoration: none;
+
+      &:visited {
+        color: inherit;
+      }
+    }
+  }
+}

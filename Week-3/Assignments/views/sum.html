@@ -4,12 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-  hi!
-  <form action="">
-    <input type="text" placeholder="Enter an Integer">
-    <button>Submit</button>
-  </form>
+
+  <h1 id="sumHeading">1+2+3+ ... + N</h1>
+  
+  <div class="resultBox">
+    <div class="result"></div>
+  </div>
+  
+
+  <div class="sumBox">
+
+    <form action="" id="js-sumForm">
+      <input type="text" id="js-sumInput" placeholder="Enter an Integer">
+      <button id="js-sumButton">Submit</button>
+    </form>
+
+  </div>
+  
+
+  <script>
+
+    const form = document.querySelector('#js-sumForm');
+    const input = document.querySelector('#js-sumInput');
+    const result = document.querySelector('div.result');
+    
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+
+      let num = input.value;
+      let numCheck = parseInt(num);
+      if(isNaN(numCheck)){
+        input.value = "";
+        return;        
+      }
+      const api = `http://localhost:3000/data?number=${num}`;
+      fetch(api)
+        .then(res => res.text())
+        .then(data => result.innerHTML = data )
+
+      input.value = "";
+    })
+
+     
+  </script>
+
 </body>
 </html>

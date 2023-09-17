@@ -11,14 +11,22 @@
 
   <%- include('_nav') %>
   <%- include('_heading') %>
-
+  
   <div class="info">
-    <form action="/trackName" id="js-registerForm"method="GET" >
-      <input type="text" id="js-registerInput" placeholder="please enter your name" name="name">
-      <button id="js-registerButton">Sign up</button>
+    <h2>Lack of Parameter</h2>
+    
+    <form action="/data" method="GET" id="js-dataForm">
+      <input type="text" id="js-dataInput" placeholder="Enter an Integer" name="number" >
+      <button id="js-dataButton">Submit</button>
     </form>
 
   </div>
+
   <%- include('_footer') %>
+
+  <script>
+
+  </script>
+
 </body>
 </html>

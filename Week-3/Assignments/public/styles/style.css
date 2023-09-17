@@ -2,12 +2,222 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.homepage {
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+#errorimg {
+  display: flex;
+  width: 60vw;
+  height: 60vh;
+  margin: auto;
+  position: relative;
+  top: 20vh;
+}
+
+#homepage-img {
+  width: 40vw;
+  height: 40vh;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  background-color: rgba(190, 235, 220, 0.7);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+nav .home {
+  margin-left: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 900;
+}
+nav .home a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  width: 40vw;
+  margin-right: 2vw;
+}
+nav ul a {
+  padding: 20px;
+  margin: 10 50px;
+  margin-left: auto;
+  text-decoration: none;
+}
+nav ul a:visited {
+  color: inherit;
+}
+
+.heading {
   display: flex;
   justify-content: center;
-  font-size: 32px;
+  font-size: 50px;
+  font-weight: 300;
   padding: 32px;
-  margin: 32px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+footer {
+  display: flex;
+  width: 100vw;
+  height: 5vh;
+  background-color: rgba(222, 246, 244, 0.6);
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.resultBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh;
+}
+.resultBox .result {
+  border: 2px solid black;
+  width: 32vw;
+  height: 10vh;
+  font-size: 32px;
+  color: rgb(155, 153, 153);
+  text-align: center;
+  background-color: rgba(169, 178, 188, 0.2);
+}
+
+.sumBox {
+  display: flex;
+  justify-content: center;
+}
+.sumBox #js-sumForm {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+}
+.sumBox #js-sumForm #js-sumInput {
+  width: 20vw;
+  height: 6vh;
+  font-size: 26px;
+  border: 2px solid #999;
+}
+.sumBox #js-sumForm #js-sumInput::-moz-placeholder {
+  font-size: 26px;
+  color: #999;
+}
+.sumBox #js-sumForm #js-sumInput::placeholder {
+  font-size: 26px;
+  color: #999;
+}
+.sumBox #js-sumForm #js-sumButton {
+  width: 6vw;
+  height: 6vh;
+  margin-left: 4px;
+  background-color: rgba(210, 208, 208, 0.5);
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid rgb(91, 90, 90);
+}
+
+#sumHeading {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 14vh;
+}
+
+#js-dataForm {
+  margin: 20px;
+  padding: 20px;
+}
+#js-dataForm #js-dataInput {
+  width: 20vw;
+  height: 6vh;
+  font-size: 26px;
+  margin-left: 20px;
+}
+#js-dataForm #js-dataInput::-moz-placeholder {
+  font-size: 26px;
+  color: #999;
+}
+#js-dataForm #js-dataInput::placeholder {
+  font-size: 26px;
+  color: #999;
+}
+#js-dataForm #js-dataButton {
+  position: relative;
+  bottom: 4px;
+  width: 6vw;
+  height: 6vh;
+  margin-left: 4px;
+  background-color: rgba(210, 208, 208, 0.5);
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid rgb(91, 90, 90);
+}
+
+#js-registerForm {
+  margin: 20px;
+  padding: 20px;
+}
+#js-registerForm #js-registerInput {
+  width: 20vw;
+  height: 6vh;
+  font-size: 26px;
+  margin-left: 20px;
+}
+#js-registerForm #js-registerInput::-moz-placeholder {
+  font-size: 26px;
+  color: #999;
+}
+#js-registerForm #js-registerInput::placeholder {
+  font-size: 26px;
+  color: #999;
+}
+#js-registerForm #js-registerButton {
+  position: relative;
+  bottom: 4px;
+  width: 6vw;
+  height: 6vh;
+  margin-left: 4px;
+  background-color: rgba(210, 208, 208, 0.5);
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid rgb(91, 90, 90);
+}
+
+#js-userPageForm {
+  margin: 20px;
+  padding: 20px;
+}
+#js-userPageForm #js-userPageButton {
+  position: relative;
+  bottom: 4px;
+  width: 6vw;
+  height: 6vh;
+  margin-left: 4px;
+  background-color: rgba(210, 208, 208, 0.5);
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid rgb(91, 90, 90);
 }/*# sourceMappingURL=style.css.map */

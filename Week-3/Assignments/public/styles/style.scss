@@ -2,14 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.homepage {
+.info {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: 32px;
-  padding: 32px;
-  margin: 32px;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
 }
 
-//@import "./"
+#errorimg {
+  display: flex;
+  width: 60vw;
+  height: 60vh;
+  margin: auto;
+  position: relative;
+  top: 20vh;
+}
+
+#homepage-img {
+  width: 40vw;
+  height: 40vh;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@import "./nav";
+@import "./heading";
+@import "./footer";
+@import "./sum";
+@import "./data";
+@import "./register";
+@import "./userPage";

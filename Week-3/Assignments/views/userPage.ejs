@@ -3,13 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>hi! <%= name%></title>
+  <title>hi! <%= title%></title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <h1>hello! <%= name%></h1>
-    <form action="/myName" method="POST">
-      <button name="delCookies" value="true">Log out</button>
+
+  <%- include('_nav') %>
+  <%- include('_heading') %>
+
+  <div class="info">
+    <h1>Have a good one,  <%= name%></h1>
+    <form action="/myName" method="POST" id="js-userPageForm">
+      <button name="delCookies" id="js-userPageButton" value="true">Log out</button>
     </form>
-    
+  </div>
+  <%- include('_footer') %>
+  
 </body>
 </html>

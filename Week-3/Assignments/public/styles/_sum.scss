@@ -1,0 +1,60 @@
+.resultBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh;
+
+  .result {
+    border: 2px solid black;
+    width: 32vw;
+    height: 10vh;
+    font-size: 32px;
+    color: rgb(155, 153, 153);
+    text-align: center;
+    background-color: rgb(169, 178, 188, 0.2);
+  }
+}
+
+.sumBox {
+  // background-color: red;
+  display: flex;
+  justify-content: center;
+  // margin-top: 50vh;
+
+  #js-sumForm {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    // background-color: red;
+
+    #js-sumInput {
+      width: 20vw;
+      height: 6vh;
+      font-size: 26px;
+      // margin-left: 80px;
+      border: 2px solid #999;
+
+      &::placeholder {
+        font-size: 26px;
+        color: #999;
+      }
+    }
+
+    #js-sumButton {
+      width: 6vw;
+      height: 6vh;
+      margin-left: 4px;
+      background-color: rgb(210, 208, 208, 0.5);
+      font-size: 20px;
+      cursor: pointer;
+      border: 2px solid rgb(91, 90, 90);
+    }
+  }
+}
+
+#sumHeading {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 14vh;
+  // background-color: yellow;
+}
