@@ -14,4 +14,10 @@
 
   - [HW4 Page](https://huanciou.github.io/remote-assignments/Week-2/Assignment-4/index.html)
 
-  - [HW6 Page](#)
+  - [HW6 Page](https://huanciou.github.io/my-react-app/)
+
+- Week-3
+
+  - [Backend Server](https://github.com/huanciou/remote-assignments/tree/main/Week-3/Assignments)
+
+  - [HW5 twoSum](https://github.com/huanciou/remote-assignments/blob/main/Week-3/Assignments/Assignments-5/twoSum.js)
