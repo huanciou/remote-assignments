@@ -1,4 +1,4 @@
-# Week-3/Assignment
+# Week-3/Assignments
 
 ## Installation
 
@@ -9,7 +9,8 @@ $ npm install express ejs cookie-parser
 ## Run
 
 ```sh
-$ cd /Assignment
+$ git clone https://github.com/huanciou/remote-assignments.git
+$ cd /remote-assignments/Week-3/Assignments
 $ node app.js
 ```
 
