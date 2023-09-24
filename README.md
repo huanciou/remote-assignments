@@ -30,7 +30,7 @@
 
   - [HW2](https://github.com/huanciou/remote-assignments/blob/main/Week-4/Assignment-2/app.js)
 
-  - [HW3](https://github.com/huanciou/remote-assignments/blob/main/Week-3)
+  - [HW3](https://github.com/huanciou/remote-assignments/tree/main/Week-4/Assignment-3)
 
     - `db >> /Week-3/sql/backup.sql  `
     - `assignment 3 + 4 合併在 assigment 3 裡面`
