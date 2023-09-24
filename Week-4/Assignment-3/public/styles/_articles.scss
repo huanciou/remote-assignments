@@ -1,0 +1,32 @@
+.articles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  div {
+    flex-direction: column;
+    display: flex;
+    border: 30px ridge rgb(152, 157, 117);
+    margin: 20px;
+    width: 1000px;
+    height: auto;
+    text-align: center;
+
+    p {
+      flex-wrap: wrap;
+      overflow-wrap: break-word;
+      // background-color: red;
+      margin-top: 20px;
+      font-size: 20px;
+      padding: 6px;
+      font-weight: 600;
+    }
+
+    .js-contentTag {
+      font-size: 30px;
+      padding: 10px;
+      font-weight: 400;
+    }
+  }
+}

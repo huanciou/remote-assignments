@@ -23,3 +23,14 @@
   - [Backend Server](https://github.com/huanciou/remote-assignments/tree/main/Week-3/Assignments)
 
   - [HW5 twoSum](https://github.com/huanciou/remote-assignments/blob/main/Week-3/Assignments/Assignments-5/twoSum.js)
+
+- Week-4
+
+  - [HW1](https://github.com/huanciou/remote-assignments/blob/main/Week-4/Assignment-1/app.js)
+
+  - [HW2](https://github.com/huanciou/remote-assignments/blob/main/Week-4/Assignment-2/app.js)
+
+  - [HW3](https://github.com/huanciou/remote-assignments/blob/main/Week-3)
+
+    - `db >> /Week-3/sql/backup.sql  `
+    - `assignment 3 + 4 合併在 assigment 3 裡面`

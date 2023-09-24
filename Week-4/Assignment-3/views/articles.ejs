@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+ 
+<%- include('_nav') %> 
+<%- include('_heading') %>
+
+<div class="articles">
+
+</div>
+
+<%- include('_footer') %>
+
+<script>
+  const url = `/api/articles`;
+  fetch(url)
+    .then( res => res.json())
+    .then( data => { // 這時候的 data 已經是一個 obj
+      const box = document.querySelector(".articles");
+      
+      data.forEach( (e) => {
+
+      const contents = document.createElement('div');
+      
+      const authorTag = document.createElement('p');
+      authorTag.innerText = `${e.author}`;
+      contents.appendChild(authorTag);
+
+      const titleTag = document.createElement('p');
+      titleTag.innerText = `${e.title}`;
+      contents.appendChild(titleTag);
+
+      const contentTag = document.createElement('p');
+      contentTag.classList.add('js-contentTag');
+      contentTag.innerText = `${e.content}`;
+      contents.appendChild(contentTag);
+
+      box.appendChild(contents);  
+      })
+ 
+    })
+
+</script>
+
+</body>
+</html>

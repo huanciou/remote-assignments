@@ -1,0 +1,52 @@
+.profile {
+  display: flex;
+  // background-color: rgb(190, 235, 220, 0.1);
+  height: 40vh;
+  width: 800px;
+  justify-content: center;
+  margin: auto;
+  border: 10px double rgba(74, 66, 25, 0.8);
+  border-radius: 8%;
+
+  .photo {
+    margin: 20px;
+    // flex: 1;
+    align-self: center;
+    margin-left: 40px;
+    // background-color: red;
+    img {
+      border: 10px ridge rgba(241, 177, 75, 0.7);
+      border-radius: 10%;
+      width: 160px;
+      height: 160px;
+    }
+  }
+
+  .info {
+    // margin: 20px;
+    // background-color: aqua;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: auto;
+    width: auto;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgba(127, 136, 54, 0.618);
+
+    .acc {
+      margin: 20px;
+      p {
+        overflow-wrap: break-word;
+      }
+    }
+
+    .mail {
+      margin: 20px;
+      p {
+        overflow-wrap: break-word;
+      }
+    }
+  }
+}
