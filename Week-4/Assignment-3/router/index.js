@@ -10,19 +10,20 @@ const {
   accCheck,
   getArticles,
   postArticles,
+  articleSearch,
 } = require("./database");
 
 /* routes */
 
 router.get("/", (req, res) => {
-  res.render("homePage");
+  res.render("homePage", { title: "homepage" });
 });
 
 router.get("/users", async (req, res) => {
   if (req.session.userID) {
     const info = await getInfo(req.session.userID);
     const { account: acc, email: mail } = info[0];
-    res.render("usersPage", { acc, mail });
+    res.render("usersPage", { acc, mail, title: "userpage" });
   } else {
     res.redirect("/logIn");
   }
@@ -40,7 +41,7 @@ router.get("/logIn", (req, res) => {
   if (req.session.userID) {
     res.redirect("/users");
   } else {
-    res.render("logIn");
+    res.render("logIn", { title: "log-in page" });
   }
 });
 
@@ -57,7 +58,7 @@ router.post("/logIn", async (req, res) => {
     res.redirect("/users");
   } else {
     // 1.2 錯誤 => 顯示錯誤 /logIn
-    res.send(isAccMatch);
+    res.render("loggingFailed");
   }
 
   // const accChecker = await accCheck(acc);
@@ -66,7 +67,7 @@ router.post("/logIn", async (req, res) => {
 
 router.get("/signUp", (req, res) => {
   // 顯示註冊畫面
-  res.render("signUp");
+  res.render("signUp", { title: "sign-up page" });
 });
 
 router.post("/signUp", async (req, res) => {
@@ -75,16 +76,16 @@ router.post("/signUp", async (req, res) => {
 
   if (!isAccExist) {
     const isSignUpDone = await signUp(acc, mail, pwd);
-    res.send(` sign up status: done `);
+    res.render("signupDone");
     // 3.1 註冊成功 => 成功登入狀態
   } else {
     // 3.2 註冊失敗 => 回傳失敗
-    res.send(` sign up status: ${!isAccExist}, account has existed`);
+    res.render("signupFailed");
   }
 });
 
 router.get("/articles", (req, res) => {
-  res.render("articles");
+  res.render("articles", { title: "article page" });
 });
 
 router.get("/api/articles", async (req, res) => {
@@ -92,11 +93,17 @@ router.get("/api/articles", async (req, res) => {
   res.json(articlesContent);
 });
 
+router.get("/api/articles/search/:author", async (req, res) => {
+  const { author } = req.params;
+  const getSearchArticle = await articleSearch(author);
+  res.json(getSearchArticle);
+});
+
 router.get("/post", (req, res) => {
   if (req.session.userID) {
-    res.render("post");
+    res.render("post", { title: "post page" });
   } else {
-    res.send("you're not logging");
+    res.render("notLogging");
   }
 });
 

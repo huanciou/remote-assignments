@@ -13,6 +13,11 @@
 <%- include('_nav') %> 
 <%- include('_heading') %>
 
+<form action="" id="js-articleForm">
+  <input id="js-articleInput" type="text" placeholder="search author" required>
+  <button id="js-articleSearch">Search</button>
+</form>
+
 <div class="articles">
 
 </div>
@@ -20,12 +25,14 @@
 <%- include('_footer') %>
 
 <script>
-  const url = `/api/articles`;
-  fetch(url)
+
+  const box = document.querySelector(".articles");
+
+  function getArticles(url){
+    fetch(url)
     .then( res => res.json())
     .then( data => { // 這時候的 data 已經是一個 obj
-      const box = document.querySelector(".articles");
-      
+
       data.forEach( (e) => {
 
       const contents = document.createElement('div');
@@ -47,6 +54,27 @@
       })
  
     })
+  }
+  
+  const url = `/api/articles`;
+  getArticles(url);
+
+  const articleSearch = document.querySelector('#js-articleSearch');
+  
+  articleSearch.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    const articleInput = document.querySelector('#js-articleInput');
+    const author = articleInput.value;
+
+    const searchUrl = `/api/articles/search/${author}`;
+
+    // console.log(author);
+    // console.log(searchUrl);
+    box.innerHTML = '';
+    getArticles(searchUrl);
+    articleInput.value = "";
+  })
 
 </script>
 

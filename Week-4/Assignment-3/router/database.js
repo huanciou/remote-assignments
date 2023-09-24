@@ -100,3 +100,18 @@ module.exports.postArticles = async (title, content, author) => {
   // console.log(postStatus.affectedRows);
   return postStatus.affectedRows > 0;
 };
+
+module.exports.articleSearch = async (author) => {
+  const [searchStatus] = await pool.query(
+    `
+    SELECT author, title, content
+    FROM article
+    WHERE author = ?
+    ORDER BY id DESC;
+  `,
+    [author]
+  );
+
+  // console.log(searchStatus);
+  return searchStatus;
+};

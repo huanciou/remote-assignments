@@ -23,6 +23,13 @@
   top: 20vh;
 }
 
+.p-tag {
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
 @import "./nav";
 @import "./footer";
 @import "./form";
