@@ -32,5 +32,5 @@
 
   - [HW3](https://github.com/huanciou/remote-assignments/tree/main/Week-4/Assignment-3)
 
-    - `db >> /Week-3/sql/backup.sql  `
+    - `db >> /Week-4/Assignment-3/sql/backup.sql  `
     - `assignment 3 + 4 合併在 assigment 3 裡面`
